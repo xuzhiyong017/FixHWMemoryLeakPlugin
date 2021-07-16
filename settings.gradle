@@ -1,0 +1,3 @@
+rootProject.name = "ASMPlugin"
+include ':app'
+include ':asmPlugin'

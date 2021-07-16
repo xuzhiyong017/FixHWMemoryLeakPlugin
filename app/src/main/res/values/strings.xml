@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ASMPlugin</string>
+    <string name="title_activity_main5">MainActivity5</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>
