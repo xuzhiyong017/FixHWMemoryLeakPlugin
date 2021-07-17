@@ -1,3 +1,4 @@
 rootProject.name = "ASMPlugin"
 include ':app'
 include ':asmPlugin'
+include ':fix-memory-lib'

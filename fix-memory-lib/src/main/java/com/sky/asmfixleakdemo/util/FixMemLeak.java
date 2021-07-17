@@ -1,8 +1,11 @@
-package com.sky.asmfixleak.util;
+package com.sky.asmfixleakdemo.util;
 
 import android.app.Activity;
 import android.content.Context;
+import android.os.Build;
 import android.view.inputmethod.InputMethodManager;
+
+import androidx.annotation.RequiresApi;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
@@ -70,7 +73,7 @@ public class FixMemLeak {
                     }
                 }
             }
-        } catch (IllegalAccessException | ClassNotFoundException | NoSuchFieldException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
