@@ -5,6 +5,7 @@ plugins {
     id 'kotlin'
 }
 
+apply from:"push.gradle"
 
 java {
     sourceCompatibility = JavaVersion.VERSION_1_8
@@ -32,83 +33,3 @@ repositories {
 
 
 
-//group和version在后面使用自定义插件的时候会用到
-group='io.github.xuzhiyong017'
-archivesBaseName = "fixhw-memoryleak"
-version='0.0.1'
-
-uploadArchives {
-    repositories {
-        mavenDeployer {
-            beforeDeployment { deployment -> signing.signPom(deployment) }
-
-            repository(url: uri('./pluginDir'))
-
-//            repository(url: "https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/") {
-//                authentication(userName: ossrhUsername, password: ossrhPassword)
-//            }
-//
-//            snapshotRepository(url: "https://s01.oss.sonatype.org/content/repositories/snapshots/") {
-//                authentication(userName: ossrhUsername, password: ossrhPassword)
-//            }
-
-            pom.project {
-                name 'fix memoryLeak'
-                packaging 'jar'
-                artifactId 'huawei-memoryleak-plugin'
-                // optionally artifactId can be defined here
-                description 'fix huawei or honor phone memory leak'
-                url 'https://github.com/xuzhiyong017/FixHWMemoryLeakPlugin'
-
-                scm {
-                    connection 'scm:svn:https://github.com/xuzhiyong017/FixHWMemoryLeakPlugin'
-                    developerConnection 'scm:svn:https://github.com/xuzhiyong017/FixHWMemoryLeakPlugin'
-                    url 'https://github.com/xuzhiyong017/FixHWMemoryLeakPlugin'
-                }
-
-                licenses {
-                    license {
-                        name 'The Apache License, Version 2.0'
-                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-                    }
-                }
-
-                developers {
-                    developer {
-                        id 'bluesea'
-                        name 'bluesea'
-                        email '18971269648@163.com'
-                    }
-                }
-            }
-        }
-    }
-}
-compileKotlin {
-    kotlinOptions {
-        jvmTarget = "1.8"
-    }
-}
-compileTestKotlin {
-    kotlinOptions {
-        jvmTarget = "1.8"
-    }
-}
-
-task javadocJar(type: Jar) {
-    classifier = 'javadoc'
-    from javadoc
-}
-
-task sourcesJar(type: Jar) {
-    classifier = 'sources'
-    from sourceSets.main.allSource
-}
-
-artifacts {
-    archives javadocJar, sourcesJar
-}
-
-signing {
-    sign configurations.archives
-}
