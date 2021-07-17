@@ -1,11 +1,8 @@
-package com.sky.asmfixleakdemo.util;
+package com.sky.asmfixleak.util;
 
 import android.app.Activity;
 import android.content.Context;
-import android.os.Build;
 import android.view.inputmethod.InputMethodManager;
-
-import androidx.annotation.RequiresApi;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;

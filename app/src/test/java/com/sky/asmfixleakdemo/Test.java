@@ -1,4 +1,4 @@
-package com.sky.asmfixleak;
+package com.sky.asmfixleakdemo;
 
 import java.lang.reflect.Field;
 

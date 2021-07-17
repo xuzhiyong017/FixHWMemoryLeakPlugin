@@ -1,4 +1,4 @@
-package com.sky.asmfixleak
+package com.sky.asmfixleakdemo
 
 import org.junit.Test
 
@@ -23,7 +23,7 @@ class ExampleUnitTest {
 
     @Test
     fun getJavaValueByReflect(){
-        val test = com.sky.asmfixleak.Test()
+        val test = com.sky.asmfixleakdemo.Test()
         val field:Field = test.javaClass.getDeclaredField("name")
         field.isAccessible = true
         println(field.get(test))

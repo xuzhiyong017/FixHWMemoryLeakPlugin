@@ -1,6 +1,5 @@
-package com.sky.asmfixleak;
+package com.sky.asmfixleakdemo;
 
-import com.sky.asmfixleak.util.FixMemLeak;
 
 /**
  * @author: xuzhiyong
@@ -14,6 +13,5 @@ public class TestActivity extends MainActivity2{
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        FixMemLeak.fixHWPhoneMemoryLeak(this);
     }
 }

@@ -1,9 +1,6 @@
-package com.sky.asmfixleak;
+package com.sky.asmfixleakdemo;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import android.os.Bundle;
-import android.util.Log;
 
 public class MainActivity2 extends AppCompatActivity {
 

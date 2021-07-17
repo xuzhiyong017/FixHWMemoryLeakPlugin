@@ -1,11 +1,9 @@
-package com.sky.asmfixleak.util;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.sky.asmfixleakdemo.util;
 
 import android.os.Bundle;
 
-import com.sky.asmfixleak.MainActivity;
-import com.sky.asmfixleak.R;
+import com.sky.asmfixleakdemo.MainActivity;
+import com.sky.asmfixleakdemo.R;
 
 public class MainActivity4 extends MainActivity {
 

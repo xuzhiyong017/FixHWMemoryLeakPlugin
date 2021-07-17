@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.sky.asmfixleak">
+    package="com.sky.asmfixleakdemo">
 
     <application
         android:allowBackup="true"
@@ -13,16 +13,16 @@
             android:name=".MainActivity5"
             android:exported="true" />
         <activity
-            android:name=".util.MainActivity4"
+            android:name="com.sky.asmfixleakdemo.util.MainActivity4"
             android:exported="true" />
         <activity
-            android:name=".MainActivity3"
+            android:name="com.sky.asmfixleakdemo.MainActivity3"
             android:exported="true" />
         <activity
-            android:name=".MainActivity2"
+            android:name="com.sky.asmfixleakdemo.MainActivity2"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.sky.asmfixleakdemo.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

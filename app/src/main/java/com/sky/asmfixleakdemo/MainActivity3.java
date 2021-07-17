@@ -1,6 +1,4 @@
-package com.sky.asmfixleak;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.sky.asmfixleakdemo;
 
 import android.os.Bundle;
 

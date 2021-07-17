@@ -1,6 +1,6 @@
 //group和version在后面使用自定义插件的时候会用到
 group='io.github.xuzhiyong017'
-version='0.0.1'
+version='0.0.2'
 
 
 def isReleaseBuild() {
