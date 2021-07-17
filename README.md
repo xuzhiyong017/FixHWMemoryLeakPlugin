@@ -37,6 +37,14 @@
  ```
  这样项目就会在编译的过程中自动去处理class了，在项目所有页面的onDestroy中添加处理代码了
  
+# 项目心得
+ * 熟悉了使用kotlin 开发Android Gradle Plugin 的流程及具体实现
+ * 熟悉了使用maven插件和maven-publish插件发布jar包和aar包
+ * 熟悉了maven Central中央仓库发布包的流程
+ * 熟悉了ASM字节码插桩在方法修改及增加的过程中的处理
+ * 在开发插件过程中遇到的一些问题通过阅读官方文档解决
+ * 开发过程中还是有很多细节优化点
+
 # License
 ```
 Copyright 2013 xuzhiyong017
