@@ -43,6 +43,8 @@
  * 熟悉了maven Central中央仓库发布包的流程
  * 熟悉了ASM字节码插桩在方法修改及增加的过程中的处理
  * 在开发插件过程中遇到的一些问题通过阅读官方文档解决
+ * 对Android打包的编译过程有了更深的认识包括（transform，task）
+ * 更熟练的使用Android应用的内存泄漏检测工具（LeakCanary库，及Android studio的性能监测工具Profiler）
  * 开发过程中还是有很多细节优化点
 
 # License
